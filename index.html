@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOVETH DESIGNS PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/MANJARA.png" class="logo">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Fashion Designer</p>
+                <h1>Hi, I'm <span>Loveth</span><br>Lucky from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+   <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/li.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Unique and detail oriented fashionista specialied on women fabrics wares, for (outing, dinner date, english
+                        wares, asoebi, casuals) bead making for traditional attires, bead bag, corsets, and anything that makes a 
+                        woman look stunning and outstanding with touch of class.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Bead Making</span><br>Bag, Necklaces, Caps and wristband</li>
+                            <li><span>Corset</span><br>Breast Corset, Bum Corset</li>
+                            <li><span>Traditional Attires</span><br>All tribe, Local and International</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Fashion Designer</span><br>Club Hive Coutours</li>
+                            <li><span>Fashion Designer</span><br>Needle Point fashion house</li>
+                            <li><span>Fashion Designer</span><br>Remote (Contractor)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>LGEA Primary School</span><br>First School Leaving Certificate</li>
+                            <li><span>Government Girls Secondard school</span><br>West Africa Examination Concil</li>
+                            <li><span>Kaduna Polytechnic</span><br>National Diploma</li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+    <!----------services-------->
+    <div id="services">
+        <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Fashion Tutor</h2>
+                <p>I teach and train student on how to become fashion designers,<br> 
+                    we have class for Beginners and Advance student, Join us today</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Fashion Tutor for Beginners</h2>
+                <p>Learn the basic fundamentals of fashion, and speed drive your journey into the fashion world</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Fashion Tutor for Advance</h2>
+                <p>Improve your knowledge of fashion design, with our masterclass, click the link below to learn more about our program.</p>
+                    <a href="#">Learn More</a>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");                
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).ClassList.add("active-tab");
+        }
+         
+
+
+    
+    </script>
+</body>
+</html> 
